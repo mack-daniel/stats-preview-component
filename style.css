@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+}
+body {
+  display: flex;
+  height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+}
+main {
+  margin: auto;
+  display: flex;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 20px;
+  width: 80%;
+}
+section {
+  flex: 1;
+}
+section:first-child {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+section img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.content {
+  /* width: 70%; */
+}
+.content > * {
+  margin: 20px 0;
+}
+section h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+section h1 span {
+  color: hsl(277, 64%, 61%);
+}
+section p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
+  line-height: 2;
+}
+section ul {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+section ul li {
+  margin-right: 5rem;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+section ul li h3 {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+@media (max-width: 991px) {
+  main {
+    margin: 20px auto;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 613px) {
+  section h1 {
+    font-size: 2rem;
+  }
+  section ul li h3 {
+    font-size: 1rem;
+  }
+  section ul {
+    flex-direction: column;
+  }
+  section ul li {
+    /* margin-top: ; */
+    margin: 20px auto 0 auto;
+  }
+  section img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+@media (max-width: 375px) {
+  section h1 {
+    font-size: 1rem;
+  }
+  section p {
+    line-height: 1.5;
+  }
+}
